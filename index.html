@@ -4,7 +4,7 @@
         <title> Odin's Recipes </title>
         <meta charset="utf-8">
         <style>
-            h1{
+            h1.heading{
                 text-align: center;
                 font-size: 100px;
             }
@@ -12,13 +12,30 @@
                 text-align: center;
                 font-size: 35px;
             }
+            div.recipes{
+                align-content: center;
+                display: flex;
+                justify-content: center;
+                
+            }
         </style>
     </head>
     <body>
-        <h1> Do you love delicious food?</h1>
+        <h1 class="heading"> Do you love delicious food?</h1>
         <h2>Here are three recipes that I'm sure you'll love</h2>
-        <div class=3recipes>
-
+        <div class="recipes">
+            <div class="meatloaf">
+                <img src="images/meat-loaf.jpg" style="width:450px;height:450px;">
+                <h3>Meatloaf</h3>
+            </div>
+            <div class="casarole">
+                <img src="images/mexican-casarole.jpg" style="width:450px;height:450px;" >
+                <h3>Mexican Casarole</h3>
+            </div>
+            <div class="straganoff">
+                <img src="images/beef-straganoff.jpg" style="width:450px;height:450px;" >
+                <h3>Beef Straganoff</h3>
+            </div>
         </div>
     </body>
 </html>
