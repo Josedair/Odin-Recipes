@@ -7,13 +7,14 @@
             h1.heading{
                 text-align: center;
                 font-size: 100px;
-                outline: 5px dashed #FFC72C;
+                outline: 5px ridge #FFC72C;
+                text-shadow:  5px  #FFC72C;
                 
             }
             h2{
                 text-align: center;
                 font-size: 35px;
-                outline: 5px dashed #FFC72C;
+                outline: 5px ridge #FFC72C;
             }
             div.recipes{
                 align-content: center;
@@ -45,8 +46,56 @@
             img{
                 border-color: #FFC72C;
                 border-width: 5px;
-                outline: 5px dashed #FFC72C;
+                outline: 5px ridge #FFC72C;
             }
+            img:hover{width:600px; height:600px;}
+            a:link{
+                background-color:#FFC72C;
+                color:#27251F;
+                padding: 14px 25px;
+                text-align: center;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 35px;
+            }
+            a:visited{color:#27251F}
+            a:hover{font-size: 45px;}
+            .container{
+                position: relative;
+                background-color: black;
+                justify-content: left;
+            }
+            .text{
+                color:white;
+                font-size: 35px;
+                width: 400px;
+            }
+            .middle{
+                transition: .3s;
+                opacity: 0;
+                position: absolute;
+                justify-content: left;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,  -50%);
+                -ms-transform: translate(-50%,  -50%);
+                
+            }
+            .image{
+                opacity: 1;
+                display: block;
+                transition: .3s;
+                backface-visibility:visible;
+                background-color: black;
+
+            }
+            .container:hover .image{
+                opacity: 0.5;
+            }
+            .container:hover .middle{
+                opacity: 1;
+            }
+
         </style>
     </head>
     <body>
@@ -54,15 +103,53 @@
         <h2>Here are three recipes that I'm sure you'll love</h2>
         <div class="recipes">
             <div class="meatloaf">
-                <img src="images/meat-loaf.jpg" style="width:450px;height:450px;">
+                <div class="container">
+                    <img class="image" src="images/meat-loaf.jpg" style="width:450px;height:450px;">
+                    <div class="middle">
+                        <div class="text">
+                            <ul>
+                                <li>Prep: 15 mins</li>
+                                <li>Cook: 1hr </li>
+                                <li>Total: 1hr 15 mins</li>
+                                <li>Servings: 8</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <h3 class="recipeTittle"> <a href="recipes/meat-loaf.html"> Meatloaf </a> </h3>
             </div>
             <div class="casarole">
-                <img src="images/mexican-casarole.jpg" style="width:450px;height:450px;" >
+                <div class="container">
+                    <img class="image" src="images/mexican-casarole.jpg" style="width:450px;height:450px;" >
+                    <div class="middle">
+                        <div class="text">
+                            <ul>
+                                <li>Prep: 20 mins</li>
+                                <li>Cook: 30 mins </li>
+                                <li>Total: 50 mins</li>
+                                <li>Servings: 6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
                 <h3 class="recipeTittle"> <a href="recipes/mexican-casarole.html"> Mexican Casarole </a> </h3>
             </div>
             <div class="straganoff">
-                <img src="images/beef-straganoff.jpg" style="width:450px;height:450px;" >
+                <div class="container">
+                    <img class="image" src="images/beef-straganoff.jpg" style="width:450px;height:450px;" >
+                    <div class="middle">
+                        <div class="text">
+                            <ul>
+                                <li>Prep: 15 mins</li>
+                                <li>Cook: 1hr 25 mins </li>
+                                <li>Additional: 10 mins</li>
+                                <li>Total: 1hr 50 mins</li>
+                                <li>Servings: 8</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <h3 class="recipeTittle"><a href="recipes/beef-straganoff.html">Beef Straganoff</a></h3>
             </div>
         </div>
