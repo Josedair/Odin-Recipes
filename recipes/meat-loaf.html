@@ -10,10 +10,7 @@
             img.image{
                 width: 450px;
                 height: 450px;
-                outline: 7px ridge #90C0A8;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+               
 
             }
             h1{
@@ -59,6 +56,15 @@
                 outline: 7px ridge #90C0A8;
                 background-color: #90C0A8;
             }
+            ul.info{
+                font-size: 25px;
+                outline: 7px ridge #90C0A8;
+                background-color: #90C0A8;
+                margin: auto;
+            }
+            ul.info li{
+                padding: 30px;
+            }
             ol.directions{
                 margin-left: auto;
                 margin-right: auto;
@@ -96,12 +102,27 @@
                 margin: auto;
                 width: 80%;
             }
+            div.info{
+                display: flex;
+                margin: auto;
+                width: 80%;
+                background-color: #90C0A8;
+                outline: ridge 7px #90C0A8 ;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1>Meatloaf</h1>
-            <img class="image" src="../images/meat-loaf.jpg" alt="meat-loaf">
+            <div class="info">
+                <img class="image" src="../images/meat-loaf.jpg" alt="meat-loaf" title="this shit looks nasty">
+                <ul class="info">
+                    <li><strong>Prep:</strong> 15 mins</li>
+                    <li><strong>Cook:</strong> 1hr </li>
+                    <li><strong>Total:</strong> 1hr15 mins</li>
+                    <li><strong>Servings:</strong> 8</li>
+                </ul>
+            </div>
             <div class="quote">
                 <p style="text-align:center;">
                     "This is a very easy and no fail recipe for meatloaf. It won't take long to make at all, and it's quite good! 
