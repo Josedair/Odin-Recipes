@@ -1,1 +1,1 @@
-# Odin-Recipes
+this is a basic assignment showing my basic knowledge of html and a bit of CSS. I made a webpage with 3 recipes and each recipe has it's own page.
