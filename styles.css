@@ -5,6 +5,9 @@ h1.heading{
     background-color:#F0C0C0 ;
     
 }
+h1.recipe-tittle{
+    font-size: 65px;
+}
 h2{
     text-align: center;
     font-size: 35px;
@@ -17,6 +20,20 @@ div.recipes{
     justify-content: center;
     
 }
+div.recipe{
+                
+    outline: 5px dotted #F0C0C0;
+    padding: 10px;
+    margin: auto;
+    width: 50%; 
+}
+
+div.centered{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
 div.meatloaf{
     display: block;
     justify-content: center;
@@ -40,6 +57,11 @@ body{
     background-color: #A8D8D8;
 }
 img{
+    
+    width: 450px;
+    height: 450px;
+}
+img.index{
     outline: 7px ridge #90C0A8;
 }
 
@@ -89,4 +111,74 @@ a:hover{font-size: 45px;}
 }
 .container:hover .middle{
     opacity: 1;
+}
+ 
+footer{
+    text-align: center;
+    padding: 35px;
+}
+
+a.footer{
+    background-color:#F0C0C0;
+    color:#90C0A8;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    outline: 7px dotted #90C0A8;
+}
+a.footer:hover{
+    font-size: 30px;
+}
+
+ul.ingredients{
+    font-size: 25px;
+    outline: 7px ridge #90C0A8;
+    background-color: #90C0A8;
+}
+ul.info{
+    font-size: 25px;
+    outline: 7px ridge #90C0A8;
+    background-color: #90C0A8;
+    margin: auto;
+}
+ul.info li{
+    padding: 30px;
+}
+ol.directions{
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 25px;
+    outline: 7px ridge #90C0A8;
+    background-color: #90C0A8;
+}
+ol li{
+    padding:5px;
+}
+
+
+p{
+    font-size: 20px;
+    padding: .5px;
+}
+p.signature{
+    text-align:right;
+    margin-top: -15px;
+}
+div.quote{
+    outline: 5px ridge #C07878;
+    background-color:#F0C0C0 ;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+div.info{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    background-color: #90C0A8;
+    outline: ridge 7px #90C0A8 ;
 }
