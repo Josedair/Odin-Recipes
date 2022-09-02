@@ -1,0 +1,92 @@
+h1.heading{
+    text-align: center;
+    font-size: 100px;
+    outline: 5px ridge #C07878;
+    background-color:#F0C0C0 ;
+    
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    outline: 5px ridge #C07878;
+    background-color:#F0C0C0 ;
+}
+div.recipes{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    
+}
+div.meatloaf{
+    display: block;
+    justify-content: center;
+    padding: 10px
+}
+div.casarole{
+    display: block;
+    justify-content: center;
+    padding: 10px
+}
+div.straganoff{
+    display: block;
+    justify-content: center;
+    padding: 10px
+}
+h3.recipeTittle{
+    text-align: center;
+    padding: 15px;
+}
+body{
+    background-color: #A8D8D8;
+}
+img{
+    outline: 7px ridge #90C0A8;
+}
+
+a:link{
+    background-color:#F0C0C0;
+    color:#90C0A8;
+    padding: 14px 25px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 35px;
+    outline: 7px dotted #90C0A8;
+}
+a:visited{color:#90C0A8}
+a:hover{font-size: 45px;}
+.container{
+    position: relative;
+    background-color: black;
+    justify-content: left;
+}
+.text{
+    color:#A8D8D8;
+    font-size: 35px;
+    width: 400px;
+}
+.middle{
+    transition: .3s;
+    opacity: 0;
+    position: absolute;
+    justify-content: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    -ms-transform: translate(-50%,  -50%);
+    
+}
+.image{
+    opacity: 1;
+    display: block;
+    transition: .3s;
+    backface-visibility:visible;
+    background-color: black;
+
+}
+.container:hover .image{
+    opacity: 0.5;
+}
+.container:hover .middle{
+    opacity: 1;
+}
